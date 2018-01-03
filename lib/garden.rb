@@ -1,4 +1,4 @@
-class Garden
+class GardenFun
   
   attr_reader :rows
   

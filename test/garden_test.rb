@@ -2,16 +2,16 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/garden'
 
-class GardenTest < Minitest::Test
+class GardenFunTest < Minitest::Test
   
   def test_it_exists
-    garden = Garden.new
+    garden = GardenFun.new
     
     assert_instance_of Garden, garden
   end
   
   def test_it_has_rows
-    garden = Garden.new({carrots: 12, beets: 20})
+    garden = GardenFun.new({carrots: 12, beets: 20})
     
     assert_equal 12, garden.rows[:carrots]
   end
